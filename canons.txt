@@ -1,0 +1,18 @@
+fonction nbrTirSupp ( nbrCanons : reel; cadenceParCanonSec : reel ; nbrMinSurv : reel) : entier ;
+
+
+	var nbrSecSurv : reel ;
+	var cadencePrTsCanons : reel ;
+	var nbrTirSupport : reel ;
+
+debut
+	nbrSecSurv = nbrMinSurv * 60 ;
+	cadencePrTsCanonsSec = nbrCanons * cadenceParCanonSec ;
+	nbrTirSupport = ( nbrSecSurv * nbrCanons ) / cadencePrTsCanons ;
+
+	retourne ( nbrTirSupport );
+
+fin 
+
+finFonction
+	

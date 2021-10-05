@@ -1,0 +1,20 @@
+var valeur : entier ;
+var valeurMax : entier ;
+var i : entier ;
+
+afficher( "entrez le nombre numero 1" ) ;
+saisir(valeurMax) ;
+
+pour i 
+	allant de 2 a 20
+	par pas de 1 faire
+		afficher( "entrez le nombre numero " i ) ;
+		saisir(valeur) ;
+		
+		si valeur > valeurMax alors
+			valeurMax = valeur ;
+		finsi ;
+
+finpour ;
+
+retourne (valeurmax ) ;
