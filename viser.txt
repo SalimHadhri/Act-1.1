@@ -1,0 +1,45 @@
+
+val valeurRandom : entier ;
+ 
+
+saisir (valeurSaisie) ;
+
+var valeur : entier ;
+valeur = random(1,50) ;
+
+
+constante pos1 = entier <- 1 ;
+constante pos2 = entier <- 24 ;
+constante pos3 = entier <- 30 ;
+constante pos4 = entier <- 45 ;
+
+si valeur == 1 || valeur == 24 || valeur == 30 || valeur == 45 alors
+	afficher("Touché ! bravo vous avez coulé votre ennemi !") ;
+finsi ;
+
+si valeur > pos4 alors
+	afficher ( "Loupé ! (Aide : l'angle est plus grand)") ;
+	si valeur > pos3 alors
+		afficher ( "Loupé ! (Aide : l'angle est plus grand)") ;
+		si valeur > pos2 alors
+			afficher ( "Loupé ! (Aide : l'angle est plus grand)") ;	
+			si valeur > pos2 alors
+				afficher ( "Loupé ! (Aide : l'angle est plus grand)") ;	
+
+			finsi ;
+		finsi ;
+	finsi ;
+sinon 
+	afficher ( "Loupé ! (Aide : l'angle est plus petit");
+finsi ;
+	
+
+
+
+
+	
+
+
+
+
+
